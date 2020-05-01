@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from "gatsby"
 import Layout from '../components/Layout';
 import Scroll from '../components/Scroll';
 
@@ -9,7 +10,7 @@ import SocialLinks from '../components/SocialLinks';
 import Subscribe from '../components/Subscribe';
 import Header from '../components/Header';
 
-import ipad from '../assets/images/ipad.png';
+import avatar from '../assets/images/jess.png';
 import demoImage1 from '../assets/images/demo-image-01.jpg';
 import demoImage2 from '../assets/images/demo-image-02.jpg';
 import bgMaster from '../assets/images/bg-masthead.jpg';
@@ -22,7 +23,7 @@ const IndexPage = () => (
       <div className="container d-flex h-100 align-items-center">
         <div className="mx-auto text-center">
           <h1 className="mx-auto my-0 text-uppercase">{config.heading}</h1>
-          <h2 className="text-white-50 mx-auto mt-2 mb-5">
+          <h2 className="text-white mx-auto mt-2 mb-5">
             {config.subHeading}
           </h2>
           <Scroll type="id" element="about">
@@ -38,18 +39,16 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h2 className="text-white mb-4">Built with Bootstrap 4</h2>
+            <h2 className="text-white mb-4">About Me</h2>
             <p className="text-white-50">
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It
-              can be yours right now, simply download the starter on
-              <a href="https://github.com/anubhavsrivastava/gatsby-starter-grayscale">
-                the github repo
-              </a>
-              .
+              Hi, I'm Jess. I live in London and currently work as an Application Support Analyst. 
+              I'm learning to code in my free time to make websites.
+              I love travelling, yoga, tango, Thai food, ice cream and sloths.
+              Take a look at some of my projects below.
             </p>
           </div>
         </div>
-        <img src={ipad} className="img-fluid" alt="" />
+        <img src={avatar} className="img-fluid pb-5" alt="" />
       </div>
     </section>
 
@@ -61,11 +60,12 @@ const IndexPage = () => (
           </div>
           <div className="col-xl-4 col-lg-5">
             <div className="featured-text text-center text-lg-left">
-              <h4>Shoreline</h4>
+              <h4>Frontend Projects</h4>
               <p className="text-black-50 mb-0">
-                Grayscale is open source and MIT licensed. This means you can
-                use it for any project - even commercial projects! Download it,
-                customize it, and publish your website!
+                <ul>
+                  <li>Down Dog Yoga Studio <a href="www.downdogyogalondon.co.uk">www.downdogyogalondon.co.uk</a></li>
+                </ul>
+                
               </p>
             </div>
           </div>
@@ -79,10 +79,9 @@ const IndexPage = () => (
             <div className="bg-black text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-left">
-                  <h4 className="text-white">Misty</h4>
+                  <h4 className="text-white">Artwork</h4>
                   <p className="mb-0 text-white-50">
-                    An example of where you can put an image of a project, or
-                    anything else, along with a description.
+                    I also love drawing, painting and arts and crafts things. Check out some of my <Link to="/artwork">artwork</Link>.
                   </p>
                   <hr className="d-none d-lg-block mb-0 ml-0" />
                 </div>
@@ -99,11 +98,9 @@ const IndexPage = () => (
             <div className="bg-black text-center h-100 project">
               <div className="d-flex h-100">
                 <div className="project-text w-100 my-auto text-center text-lg-right">
-                  <h4 className="text-white">Mountains</h4>
+                  <h4 className="text-white">Photography</h4>
                   <p className="mb-0 text-white-50">
-                    Another example of a project with its respective
-                    description. These sections work well responsively as well,
-                    try this theme on a small screen!
+                    Take a look at some of my <Link to="/photos">photos</Link>. 
                   </p>
                   <hr className="d-none d-lg-block mb-0 mr-0" />
                 </div>
@@ -115,7 +112,6 @@ const IndexPage = () => (
     </section>
 
     <Subscribe />
-
     <SocialLinks />
     <Footer />
   </Layout>

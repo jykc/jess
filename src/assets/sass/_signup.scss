@@ -11,9 +11,10 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  .form-inline {
+  .form-horizontal {
     input {
       box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      margin: 15px;
       padding: 1.25rem 2rem;
       height: auto;
       font-family: 'Varela Round';
@@ -22,5 +23,17 @@
       letter-spacing: 0.15rem;
       border: 0;
     }
+    textarea {
+      box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+      margin: 15px;
+      padding: 1.25rem 2rem;
+      height: auto;
+      font-family: 'Varela Round';
+      font-size: 80%;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border: 0;
+    }
+
   }
 }
