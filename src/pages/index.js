@@ -63,7 +63,7 @@ const IndexPage = () => (
               <h4>Frontend Projects</h4>
               <p className="text-black-50 mb-0">
                 <ul>
-                  <li>Down Dog Yoga Studio <a href="www.downdogyogalondon.co.uk">www.downdogyogalondon.co.uk</a></li>
+                  <li>Down Dog Yoga Studio <a href="https://www.downdogyogalondon.co.uk">www.downdogyogalondon.co.uk</a></li>
                 </ul>
                 
               </p>
