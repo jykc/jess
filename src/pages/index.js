@@ -63,7 +63,9 @@ const IndexPage = () => (
               <h4>Frontend Projects</h4>
               <p className="text-black-50 mb-0">
                 <ul>
-                  <li>Down Dog Yoga Studio <a href="https://www.downdogyogalondon.co.uk">www.downdogyogalondon.co.uk</a></li>
+                  <li>Down Dog Yoga Studio <a href="https://www.downdogyogalondon.co.uk" target="blank">www.downdogyogalondon.co.uk</a></li>
+                  <li>The Guinea Pig Cafe (published without at domain atm) <a href="https://master.d3de10o81czq0u.amplifyapp.com/" target="blank">www.guineapigcafe.co.uk</a></li>
+
                 </ul>
                 
               </p>
